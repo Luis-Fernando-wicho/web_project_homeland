@@ -1,0 +1,47 @@
+.page {
+  min-width: 1280px;
+  max-width: 1600px;
+  background-color: #2a2c2f;
+  color: #ffffff;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+
+  font-family: "Inter", Arial, sans-serif;
+}
+/* media */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .page {
+    max-width: 1279px;
+    min-width: 768px;
+  }
+  .prueva {
+    max-width: 1279px;
+    min-width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* chica */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .page {
+    max-width: 768px;
+    min-width: 320px;
+  }
+  .prueva {
+    max-width: 768px;
+    min-width: 288px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

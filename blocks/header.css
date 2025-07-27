@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__logo {
+  margin-top: 34px;
+  height: 68.94px;
+  width: 254.84px;
+}
+/* media */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .header__logo {
+    margin-top: 30px;
+    height: 66px;
+    width: 254px;
+  }
+}
+/* chica */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .header__logo {
+    margin-top: 20px;
+    height: 52px;
+    width: 188px;
+  }
+}
