@@ -23,25 +23,11 @@
     max-width: 1279px;
     min-width: 768px;
   }
-  .prueva {
-    max-width: 1279px;
-    min-width: 720px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
 /* chica */
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .page {
     max-width: 768px;
     min-width: 320px;
-  }
-  .prueva {
-    max-width: 768px;
-    min-width: 288px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 }
