@@ -22,11 +22,12 @@
   grid-area: title;
 }
 
-.website__artist {
-  margin: 0px;
-  font-size: 18px;
-  line-height: 22px;
+.place__website {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   gap: 0px;
+  grid-area: website;
 }
 
 .place__image {
