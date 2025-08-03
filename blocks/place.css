@@ -30,13 +30,13 @@
   grid-area: website;
 }
 
-.place__website__url-heading {
+.website__url-heading {
   margin: 0px 0px 8px;
   color: #aaaaaa;
   gap: 0px;
 }
 
-.place__website__artist {
+.website__artist {
   margin: 0px;
   font-size: 18px;
   line-height: 22px;
