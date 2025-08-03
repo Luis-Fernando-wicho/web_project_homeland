@@ -1,0 +1,13 @@
+.place__website {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 0px;
+  grid-area: website;
+}
+
+.website__url-heading {
+  margin: 0px 0px 8px;
+  color: #aaaaaa;
+  gap: 0px;
+}
