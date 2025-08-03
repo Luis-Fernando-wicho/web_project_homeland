@@ -1,0 +1,136 @@
+.place {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 460px 484px;
+  grid-template-rows: 152px 460px auto;
+  gap: 48px 40px;
+
+  grid-template-areas:
+    "title website"
+    "image paragraph "
+    "button  paragraph";
+}
+
+.place__title {
+  font-size: 72px;
+  line-height: 76px;
+  margin: 0px;
+
+  display: flex;
+  align-items: flex-end;
+
+  grid-area: title;
+}
+
+.place__website {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 0px;
+  grid-area: website;
+}
+
+.place__website__url-heading {
+  margin: 0px 0px 8px;
+  color: #aaaaaa;
+  gap: 0px;
+}
+
+.place__website__artist {
+  margin: 0px;
+  font-size: 18px;
+  line-height: 22px;
+  gap: 0px;
+}
+
+.place__image {
+  width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  object-fit: cover; /* ??? */
+
+  transition: all 0.3s ease-out;
+
+  grid-area: image;
+}
+
+.place__image:hover {
+  opacity: 0.5;
+}
+
+.place__paragraph {
+  font-size: 18px;
+  line-height: 163%;
+  margin: 0px;
+
+  grid-area: paragraph;
+}
+
+.place__button {
+  max-width: 289px;
+  height: 48px;
+
+  font-size: 18px;
+  border-radius: 4px;
+  color: #ffffff;
+
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+  box-shadow: 5px 5px 10px 0px #00000040;
+
+  grid-area: button;
+}
+
+.place__button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 99.98%
+  );
+
+  box-shadow: 5px 5px 10px 0px #00000040;
+}
+
+/* media */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .place {
+    margin-top: 72px;
+    display: grid;
+    grid-template-columns: 340px 352px;
+    grid-template-rows: 68px 340px auto;
+    gap: 48px 40px;
+  }
+  .place__title {
+    font-size: 42px;
+    line-height: 46px;
+    grid-area: "title";
+  }
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 163%;
+    grid-area: "paragraph";
+  }
+}
+/* chica */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .place {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows: 35px 89px 320px auto 48px;
+    gap: 30px 0px;
+    grid-template-areas:
+      "title "
+      "website"
+      "image"
+      "paragraph"
+      "button";
+  }
+  .place__title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 163%;
+  }
+}

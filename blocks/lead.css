@@ -15,6 +15,7 @@
   font-size: 30px;
   text-align: center;
   line-height: 36px;
+  max-width: 720px;
 }
 
 .lead__imagen {
@@ -33,10 +34,11 @@
     font-size: 30px;
     text-align: center;
     line-height: 36px;
+    max-width: 720px;
   }
 
   .lead__imagen {
-    height: 440px;
+    height: 480px;
     width: 768px;
   }
 }
@@ -52,6 +54,7 @@
     font-size: 16px;
     text-align: center;
     line-height: 20px;
+    max-width: 288px;
   }
 
   .lead__imagen {
