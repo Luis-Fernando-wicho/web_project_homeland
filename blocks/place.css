@@ -30,6 +30,18 @@
   grid-area: website;
 }
 
+.place__website_url-heading {
+  margin: 0px 0px 8px;
+  color: #aaaaaa;
+  gap: 0px;
+}
+.place__website_artist {
+  margin: 0px;
+  font-size: 18px;
+  line-height: 22px;
+  gap: 0px;
+}
+
 .place__image {
   width: 100%;
   min-height: 100%;
